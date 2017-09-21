@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>VolunMex</title>
+	 <meta charset="UTF-8">
 	<style type="text/css">
 		body {
   background-color: #fff;
