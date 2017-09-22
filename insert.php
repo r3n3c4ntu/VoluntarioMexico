@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <meta charset="UTF-8">
 	<title>VolunMex</title>
 	<style type="text/css">
 		body {
@@ -98,7 +99,7 @@
 	$nombreU= $_POST['nombreU'];
 
 require("connect_db.php");
-	$sql = "INSERT INTO Centros (Id, Centro, Necesidad, Dirección, Contacto, Hora, Agrada, Desagrada, Asisitir, Interesado, Voluntariado, DescripcionVol, Correo, Nombre) VALUES ('','$nombre','$material','$direccion','$tel','$horario','0','0','0','0','$opVol','$voluntario', '$mailU', '$nombreU')";
+	$sql = "INSERT INTO Centros (Centro, Necesidad, Dirección, Contacto, Hora, Agrada, Desagrada, Asisitir, Interesado, Voluntariado, DescripcionVol, Correo, Nombre) VALUES ('$nombre','$material','$direccion','$tel','$horario','0','0','0','0','$opVol','$voluntario', '$mailU', '$nombreU')";
 
 if(mysqli_query($mysqli, $sql)){
 
