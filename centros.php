@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <meta charset="UTF-8">
 	<title>VolunMex</title>
 	<link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
 	<style type="text/css">
