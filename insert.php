@@ -98,6 +98,17 @@
 	$nombreU= $_POST['nombreU'];
 
 require("connect_db.php");
+	$sql = "INSERT INTO Centros (Id, Centro, Necesidad, Dirección, Contacto, Hora, Agrada, Desagrada, Asisitir, Interesado, Voluntariado, DescripcionVol, Correo, Nombre) VALUES ('','$nombre','$material','$direccion','$tel','$horario','0','0','0','0','$opVol','$voluntario', '$mailU', '$nombreU')";
+
+if(mysqli_query($mysqli, $sql)){
+
+    echo "Records inserted successfully.";
+
+} else{
+
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+
+}
 mysqli_query($mysqli,"INSERT INTO Centros VALUES('','$nombre','$material','$direccion','$tel','$horario','0','0','0','0','$opVol','$voluntario', '$mailU', '$nombreU')");
 ?>
 <div id='card' class="animated fadeIn">
