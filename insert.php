@@ -98,13 +98,7 @@
 	$nombreU= $_POST['nombreU'];
 
 require("connect_db.php");
-echo $nombre;
-echo $nombreU;
-echo $mailU;
-echo $opVol;
-echo $tel;
-	echo "mandarina";
-mysqli_query($mysqli,"INSERT INTO Centros VALUES('','$nombre','$material','$direccion','$tel','$horario','','','','','$opVol','$voluntario', '$mailU', '$nombreU')");
+mysqli_query($mysqli,"INSERT INTO Centros('Id','Centro','Necesidad','Dirección','Contacto','Hora','Agrada','Desagrada','Asistir','Interesado','Voluntariado','DescripcionVol','Correo','Nombre') VALUES('','$nombre','$material','$direccion','$tel','$horario','','','','','$opVol','$voluntario', '$mailU', '$nombreU')");
 ?>
 <div id='card' class="animated fadeIn">
   <div id='upper-side'>
