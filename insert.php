@@ -106,7 +106,7 @@ if(mysqli_query($mysqli, $sql)){
 
 } else{
 
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($mysqli);
 
 }
 mysqli_query($mysqli,"INSERT INTO Centros VALUES('','$nombre','$material','$direccion','$tel','$horario','0','0','0','0','$opVol','$voluntario', '$mailU', '$nombreU')");
